@@ -23,11 +23,11 @@ const ExperienceCard = ({ education }) => {
       date={education.date}
       iconStyle={{ background: education.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className='flex justify-center items-center w-full h-full bg-white rounded-full'>
           <img
             src={education.icon}
             alt={education.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-[60%] h-[60%] object-contain cover rounded-full'
           />
         </div>
       }
@@ -82,4 +82,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "education");

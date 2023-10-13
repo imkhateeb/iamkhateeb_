@@ -17,7 +17,7 @@ const Navbar = () => {
           window.scrollTo(0, 0);
         }}>
           <img src={logo} alt='logo' className='w-9 h-9 object-contain rounded-full' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex max-md:flex-col'><span>Khateeb |</span> <span>Sophomore @IIIT Ranchi</span></p>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex max-md:flex-col'><span>Khateeb</span><span><span className='max-md:hidden mx-2'>|</span><span>Sophomore @IIIT Ranchi</span></span></p>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>

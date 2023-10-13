@@ -29,12 +29,26 @@ import {
   jobit,
   tripguide,
   github,
+  figma,
+  redux,
+  threejs,
+  antd,
+  c,
+  python,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "tech",
+    title: 'Tech',
   },
   {
     id: "work",
@@ -79,12 +93,20 @@ const technologies = [
     icon: cpp,
   },
   {
+    name: 'C',
+    icon: c,
+  },
+  {
     name: "JavaScript",
     icon: javascript,
   },
   {
     name: "TypeScript",
     icon: typescript,
+  },
+  {
+    name: 'Python',
+    icon: python,
   },
   {
     name: "React JS",
@@ -118,6 +140,22 @@ const technologies = [
     name: "sanity",
     icon: sanity,
   },
+  {
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: 'Redux',
+    icon: redux,
+  },
+  {
+    name: 'Three JS',
+    icon: threejs,
+  },
+  {
+    name: 'ANTD',
+    icon: antd,
+  }
 ];
 
 const experiences = [
@@ -279,7 +317,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/imkhateeb/HealBuddy",
-    deployed_link: "none",
+    deployed_link: "https://healbuddybykhateeb.netlify.app/",
 
   },
   {
@@ -303,7 +341,7 @@ NFTs (ERC-20) for renting/selling, while tenants can purchase or rent properties
     ],
     image: tripguide,
     source_code_link: "https://github.com/imkhateeb/RealEstate-Dev",
-    deployed_link: "none",
+    deployed_link: "https://propertyversebyvidit.netlify.app/",
   },
 
 

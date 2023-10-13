@@ -1,4 +1,4 @@
-import logo from "./logo.png";
+import logo from "./logo.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -19,6 +19,12 @@ import typescript from "./tech/typescript.png";
 import cpp from './tech/cpp.svg';
 import sanity from './tech/sanity.svg';
 import next from './tech/next.svg';
+import figma from './tech/figma.png';
+import python from './tech/python.svg'
+import redux from './tech/redux.png';
+import threejs from './tech/threejs.svg';
+import antd from './tech/antd.svg';
+import c from './tech/c.svg';
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -36,6 +42,12 @@ import spotify from './spotify.png';
 import elegalvault from './elegalvault.png';
 
 export {
+  python,
+  figma,
+  redux,
+  threejs,
+  antd,
+  c,
   hervoicematters,
   impactbridge,
   spotify,
