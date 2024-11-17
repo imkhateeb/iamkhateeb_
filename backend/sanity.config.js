@@ -3,6 +3,8 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
+// mdkhateebur.2022ug3006@iiitranchi.ac.in
+
 export default defineConfig({
   name: 'default',
   title: process.env.SANITY_STUDIO_CLIENT_ID,

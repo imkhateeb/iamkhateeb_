@@ -10,7 +10,6 @@ import {
   next,
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -35,6 +34,20 @@ import {
   antd,
   c,
   python,
+  docker,
+  mysql,
+  kubernetes,
+  socket,
+  firebase,
+  redis,
+  kafka,
+  postman,
+  aws,
+  express,
+  shell,
+  gosocial,
+  getreferred,
+  learnshala,
 } from "../assets";
 
 export const navLinks = [
@@ -43,12 +56,16 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "experience",
+    title: "Experience",
+  },
+  {
     id: "education",
     title: "Education",
   },
   {
     id: "tech",
-    title: 'Tech',
+    title: "Tech",
   },
   {
     id: "work",
@@ -73,10 +90,6 @@ const services = [
     title: "Competetive Programmer",
     icon: backend,
   },
-  {
-    title: "Co-Ordinator SD wing, HG, IIIT Ranchi",
-    icon: creator,
-  },
 ];
 
 const technologies = [
@@ -93,7 +106,7 @@ const technologies = [
     icon: cpp,
   },
   {
-    name: 'C',
+    name: "C",
     icon: c,
   },
   {
@@ -103,10 +116,6 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
-  },
-  {
-    name: 'Python',
-    icon: python,
   },
   {
     name: "React JS",
@@ -129,6 +138,42 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "Kafka",
+    icon: kafka,
+  },
+  {
+    name: "Postman",
+    icon: postman,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Express JS",
+    icon: express,
+  },
+  {
     name: "git",
     icon: git,
   },
@@ -137,78 +182,51 @@ const technologies = [
     icon: github,
   },
   {
-    name: "sanity",
-    icon: sanity,
-  },
-  {
-    name: "Figma",
-    icon: figma,
-  },
-  {
-    name: 'Redux',
+    name: "Redux",
     icon: redux,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: "Socket IO",
+    icon: socket,
   },
   {
-    name: 'ANTD',
-    icon: antd,
-  }
+    name: "Shell Scripting",
+    icon: shell,
+  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Frontend Developer",
+    company_name: "Amrutam",
+    icon: "https://doctor.amrutam.global/assets/logo-BUB-F7Sl.png",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    date: "March 2024 - Present",
+    company_url: "https://amrutam.global/",
+    technologies: [
+      "React",
+      "NextJs",
+      "Redux",
+      "React Query",
+      "Razorpay",
+      "SEO",
+      "Figma",
+      "Axios",
+      "Tailwind CSS",
+      "Firebase",
+      "Agoda",
+      "MarTech",
+      "SSR",
+      "NodeJs",
+      "Git",
+      "GitHub",
+      "Postman",
     ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked on doctor dashboard and consumer app, developed important features like Appointment Booking, Authentication, Profile management and real-time consultation.",
+      "Integrated 3rd party services like Razorpay, Easebuzz for payment transactions, Agoda for real-time video-call, Exotel for per-minute basis audio consultations and firebase for real-time chat consultation.",
+      "Developed and improved doctor dashboard features reducing project size from 1.2GB to 780MB. Also worked on dashboard performance and reduced initial loading time from 1.7s to 1.2s.",
+      "Migrated consumer app from Client Side Rendering(CSR) to Server Side Rendering(SSR) using NodeJs and ExpressJs to improve SEO and SMO. Also improved performance by 22%.",
     ],
   },
 ];
@@ -222,7 +240,7 @@ const educations = [
     date: "November 2022 - Present",
     points: [
       "Pursuing computer science and engineering with specialization in data science and artificial intelligence.",
-      "CGPA: 8.75.",
+      "CGPA: 8.6",
     ],
   },
   {
@@ -231,9 +249,7 @@ const educations = [
     icon: starbucks,
     iconBg: "#E6DEDD",
     date: "April 2019 - Feb 2021",
-    points: [
-      "Overall percentage - 81.6%.",
-    ],
+    points: ["Overall percentage - 81.6%."],
   },
   {
     title: "Matriculation",
@@ -241,42 +257,101 @@ const educations = [
     icon: jnv,
     iconBg: "#383E56",
     date: "August 2014 - March 2023",
-    points: [
-      "Overall percentage - 87.6%.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    points: ["Overall percentage - 87.6%."],
   },
 ];
 
 const projects = [
   {
-    name: "go Social",
+    name: "Get Referred",
+    description:
+      "A platform for students/employees to get referral from employees of top startups and MNCs.",
+    tags: [
+      {
+        name: "Microservices",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ExpressJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Fastify",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Socket IO",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "Redis",
+        color: "red-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "white-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "gray-text-gradient",
+      },
+    ],
+    image: getreferred,
+    source_code_link: "https://github.com/imkhateeb/GetReferred",
+    deployed_link: "none",
+  },
+  {
+    name: "LearnShala",
+    description:
+      "A Modern course review and rating web application built on MERN stack. Here students can review, rate courses, enroll in courses and track their progress.",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ExpressJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Rate Limiter",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Deployment",
+        color: "white-text-gradient",
+      },
+    ],
+    image: learnshala,
+    source_code_link: "https://github.com/imkhateeb/Learnshala-node-backend",
+    deployed_link: "https://learnshala-react-frontend.vercel.app/",
+  },
+  {
+    name: "Go Social",
     description:
       "A Modern and fully responsive image sharing social media web application built on MERN stack.",
     tags: [
@@ -293,87 +368,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: gosocial,
     source_code_link: "https://github.com/imkhateeb/goSocial",
     deployed_link: "https://gosocialbykhateeb.netlify.app/",
   },
   {
-    name: "Heal Buddy",
-    description:
-      "An AI powered mental well being web application developed on React and sanity.io.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "chartJS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/imkhateeb/HealBuddy",
-    deployed_link: "https://healbuddybykhateeb.netlify.app/",
-
-  },
-  {
-    name: "Property Verse",
-    description:
-      `A blockchain-based real estate web app engineered on Ethereum (Solidity & React). Property owners create
-NFTs (ERC-20) for renting/selling, while tenants can purchase or rent properties.`,
-    tags: [
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/imkhateeb/RealEstate-Dev",
-    deployed_link: "https://propertyversebyvidit.netlify.app/",
-  },
-
-
-
-
-  {
-    name: "Impact Bridge",
-    description:
-      `A blockchain-based crowd funding web app engineered on Ethereum (Solidity & React). Project owners will register their properties, while investors can invest on that projects.`,
-    tags: [
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nextjs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "sanity",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: impactbridge,
-    source_code_link: "https://github.com/imkhateeb/ImapctBridge-Linking-Defi-Sustainability-",
-    deployed_link: "none",
-  },
-
-  {
     name: "Her Voice Matters",
-    description:
-      `A web-portal built using EJS, CSS, JavaScript, NodeJS, Express, MongoDB and mongoose where sexually harassed women cain register complaint and take support.`,
+    description: `A web-portal built using EJS, CSS, JavaScript, NodeJS, Express, MongoDB and mongoose where sexually harassed women cain register complaint and take support.`,
     tags: [
       {
         name: "mongoose",
@@ -392,34 +393,9 @@ NFTs (ERC-20) for renting/selling, while tenants can purchase or rent properties
     source_code_link: "https://github.com/imkhateeb/herVoiceMatters",
     deployed_link: "none",
   },
-
-  {
-    name: "e Legal Vault",
-    description:
-      `We're developing eLegalVault, a secure blockchain eVault for legal records with a user-friendly interface, enhancing legal system efficiency and cost-effectiveness. It seamlessly integrates with any existing legal database (NJDG), facilitating citizen information sharing and offers secure, permissioned APIs for case management system integration`,
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Sanity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Web3.JS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: elegalvault,
-    source_code_link: "https://github.com/imkhateeb/eLegalVault",
-    deployed_link: "none",
-  },
-
   {
     name: "Spotify Landing Page",
-    description:
-      `Just a clone of landing page of spotify. This was my first webpage`,
+    description: `Just a clone of landing page of spotify. This was my first webpage`,
     tags: [
       {
         name: "HTML",
@@ -440,4 +416,4 @@ NFTs (ERC-20) for renting/selling, while tenants can purchase or rent properties
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, educations };
+export { services, technologies, experiences, projects, educations };
