@@ -12,6 +12,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { LinkSimple } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 const ExperienceCard = ({ experience }) => {
   console.log(experience);
@@ -41,7 +42,13 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <div className="flex flex-col">
+          <div className="text-gray-400 text-sm">{experience.employment_type}</div>
+          <h3 className="text-white text-[24px] font-bold">
+            {experience.title}
+          </h3>
+        </div>
+
         <div
           onClick={handleLinkClick}
           className="text-secondary text-[16px] font-semibold flex gap-1 items-center cursor-pointer"
@@ -50,6 +57,24 @@ const ExperienceCard = ({ experience }) => {
           {experience.company_name}
           <LinkSimple size={16} />
         </div>
+        {experience?.work_urls?.length ? (
+          <div className="flex flex-col gap-1">
+            <p className="font-bold">My Work:</p>
+            <div className="flex gap-3 flex-wrap">
+              {experience.work_urls.map((work) => (
+                <Link
+                  className="text-secondary text-[14px]"
+                  to={work.url}
+                  target="_blank"
+                >
+                  {work.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -73,6 +98,38 @@ const ExperienceCard = ({ experience }) => {
           </span>
         ))}
       </div>
+
+      {experience.lor || experience.experience_letter ? (
+        <div className="my-2 flex flex-col gap-4">
+          <p>They gave me:</p>
+          {experience.lor ? (
+            <Link
+              className="text-secondary flex gap-2 items-center"
+              to={experience.lor}
+              target="_blank"
+            >
+              <LinkSimple size={16} />
+              Letter of Recommendation
+            </Link>
+          ) : (
+            ""
+          )}
+          {experience.experience_letter ? (
+            <Link
+              className="text-secondary flex gap-2 items-center"
+              to={experience.experience_letter}
+              target="_blank"
+            >
+              <LinkSimple size={16} />
+              Letter of Experience
+            </Link>
+          ) : (
+            ""
+          )}
+        </div>
+      ) : (
+        ""
+      )}
     </VerticalTimelineElement>
   );
 };

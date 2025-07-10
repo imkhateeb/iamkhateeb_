@@ -48,6 +48,7 @@ import {
   gosocial,
   getreferred,
   learnshala,
+  permisio,
 } from "../assets";
 
 export const navLinks = [
@@ -195,14 +196,68 @@ const technologies = [
   },
 ];
 
+const employment_type = {
+  PART_TIME: 'Part-Time',
+  FULL_TIME: 'Full-Time',
+  SELF_EMPLOYED: 'Self-Employed',
+  FREELANCE: 'Freelance',
+  INTERNSHIP: 'Internship',
+  TRAINEE: 'Trainee'
+}
+
 const experiences = [
   {
-    title: "Frontend Developer",
+    title: "Software Engineering Intern",
+    employment_type: employment_type.INTERNSHIP,
+    company_name: "ClearFeed",
+    icon: "https://cdn.prod.website-files.com/62be94d681a2ad4242ab2fbd/62caba699e6ac4a401dbe09f_logo.svg",
+    iconBg: "#383E56",
+    date: "March 2025 - Present",
+    company_url: "https://clearfeed.ai/",
+    work_urls: [
+      {
+        name: 'Quix',
+        url: 'https://github.com/clearfeed/quix'
+      }
+    ],
+    technologies: [
+      "AI SaaS",
+      "TypeScript",
+      "Java",
+      "PostgreSQL",
+      "Langchain",
+      "Zod",
+      "AI Agent",
+      "LLMs",
+      "NextJs",
+      "Redux",
+      "Tailwind CSS",
+      "SASS",
+      "Firebase",
+      "NodeJs",
+      "Git",
+      "GitHub",
+      "Postman",
+    ],
+    points: [
+      "Worked on Quix, ClearFeed’s open-source AI agent, driving seamless integration between Slack and business tools like GitHub, Notion, Jira, HubSpot, and Zendesk — reducing manual workflows by over 30%.",
+      "Designed and deployed agentic workflows to automate multi-step tasks and contextual actions across tools, en-hancing operational efficiency and user productivity.",
+      "Implemented secure OAuth flows for GitHub, Jira, and HubSpot, and developed granular access controls to manage Slack workspace and channel-level permissions for using the Quix app.",
+      "Developed and published production-ready NPM agent packages for GitHub, Slack, and Notion; actively contributed to Jira, HubSpot, and Zendesk agents — leveraging LangChain and LLMs to execute intelligent, context-aware automation saving organizations 100+ hours per month.",
+      `Second major contributor at Quix with over 65 PRs merged.`
+    ],
+    lor: null,
+    experience_letter: null
+  },
+  {
+    title: "Software Engineer",
+    employment_type: employment_type.PART_TIME,
     company_name: "Amrutam",
     icon: "https://doctor.amrutam.global/assets/logo-BUB-F7Sl.png",
     iconBg: "#383E56",
-    date: "March 2024 - Present",
+    date: "March 2024 - February 2025",
     company_url: "https://amrutam.global/",
+    work_urls: [],
     technologies: [
       "React",
       "NextJs",
@@ -228,6 +283,8 @@ const experiences = [
       "Developed and improved doctor dashboard features reducing project size from 1.2GB to 780MB. Also worked on dashboard performance and reduced initial loading time from 1.7s to 1.2s.",
       "Migrated consumer app from Client Side Rendering(CSR) to Server Side Rendering(SSR) using NodeJs and ExpressJs to improve SEO and SMO. Also improved performance by 22%.",
     ],
+    lor: "https://drive.google.com/file/d/157fm09TUU7L7uAhvkx1-Ct0aEqP_mQxs/view",
+    experience_letter: null
   },
 ];
 
@@ -240,13 +297,13 @@ const educations = [
     date: "November 2022 - Present",
     points: [
       "Pursuing computer science and engineering with specialization in data science and artificial intelligence.",
-      "CGPA: 8.6",
+      "CGPA: 8.8",
     ],
   },
   {
     title: "Intermediate",
     company_name: "Araria College, Araria",
-    icon: starbucks,
+    icon: null,
     iconBg: "#E6DEDD",
     date: "April 2019 - Feb 2021",
     points: ["Overall percentage - 81.6%."],
@@ -371,6 +428,29 @@ const projects = [
     image: gosocial,
     source_code_link: "https://github.com/imkhateeb/goSocial",
     deployed_link: "https://gosocialbykhateeb.netlify.app/",
+  },
+  {
+    name: "Permisio",
+    description:
+      "This project is a Role-Based Access Control (RBAC) dashboard built using React, TailwindCSS, and Redux. The purpose of this project is to simulate an admin panel where users, roles, and permissions can be managed efficiently while enforcing access control rules based on assigned permissions.",
+
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: permisio,
+    source_code_link: "https://github.com/imkhateeb/rbac-admin-panel",
+    deployed_link: "https://role-based-admin-panel.vercel.app/",
   },
   {
     name: "Her Voice Matters",

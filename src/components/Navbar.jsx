@@ -31,7 +31,7 @@ const Navbar = () => {
             <span>Khateeb</span>
             <span>
               <span className="max-md:hidden mx-2">|</span>
-              <span>3rd Year @IIIT Ranchi</span>
+              <span>Final Year @IIIT Ranchi</span>
             </span>
           </p>
         </Link>

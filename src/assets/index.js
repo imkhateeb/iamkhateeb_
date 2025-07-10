@@ -44,6 +44,7 @@ import elegalvault from "./elegalvault.png";
 import gosocial from "./gosocial.png";
 import getreferred from "./getreferred.png";
 import learnshala from "./learnshala.png";
+import permisio from "./permisio.png";
 
 import docker from "./tech/docker.svg";
 import mysql from "./tech/mysql.svg";
@@ -100,6 +101,7 @@ export {
   gosocial,
   getreferred,
   learnshala,
+  permisio,
   docker,
   mysql,
   kubernetes,

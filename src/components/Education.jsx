@@ -24,11 +24,11 @@ const EducationCard = ({ education }) => {
       iconStyle={{ background: education.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full bg-white rounded-full">
-          <img
+          {education.icon ? <img
             src={education.icon}
             alt={education.company_name}
             className="w-[60%] h-[60%] object-contain cover rounded-full"
-          />
+          /> : <div className="flex items-center justify-center h-full w-full text-black text-xl font-bold">A</div>}
         </div>
       }
     >

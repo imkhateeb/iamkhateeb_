@@ -44,21 +44,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hi, I’m Md Khateebur Rab, a third-year Computer Science student at IIIT
-        Ranchi (CGPA: 8.59) with strong industry experience and a passion for
-        impactful software. At Amrutam, I developed and optimized key features,
-        including real-time video consultations and server-side rendering. I’ve
-        also built scalable projects like Get Referred using Node.js and
-        microservices. With 600+ competitive programming and DSA problems
-        solved, I bring a problem-solving mindset and hands-on expertise, ready
-        to contribute to top organizations.
+        I’m Md Khateebur Rab, a Computer Science undergrad at IIIT Ranchi driven by curiosity and a love for building things that matter. My journey blends strong academic foundations with practical software engineering experience at fast-paced startups, where I’ve contributed to AI-powered tools and full-stack systems that improve real-world workflows. Beyond building products, I’m passionate about competitive programming, which sharpens my problem-solving mindset and attention to detail. I’m excited by the impact thoughtful engineering can create — saving time, scaling ideas, and shaping user experiences. What sets me apart is my energy, adaptability, and genuine enthusiasm to learn, collaborate, and turn complex challenges into meaningful solutions.
       </motion.p>
-
-      <div className="mt-20 flex flex-wrap gap-10 items-center justify-center">
-        {services.map((service, index) => (
-          <ServicesCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   );
 };
